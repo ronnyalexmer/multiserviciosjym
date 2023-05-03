@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#f2f2f2">
-	<title>Mi web progresiva</title>
+	<title>Juan Manitas</title>
 	<link rel="manifest" href="/manifest.json">
 	<link rel="stylesheet" href="/src/css/styles.css">
 </head>
+
 <body>
 	<header class="header">
-		<nav>
-			<div class="socialTop">
+		<nav class="nav-social">
+			<div class="socialtop">
 				<div class='top-social'>
-					<a href='https://wa.me/34664823177?text=Quiero un presupuesto sin compromiso'><span>664823177</span></a>
-					<a href='mailto:info@juanmanitas.com?Subject=Presupuesto sin compromiso'><span>info@juanmanitas.com</span></a>
-					<a href='tel:+34664823177'><span>Llámame</span></i></a>
-					<a href="#"><i class='fa fa-youtube'></i></a>
+					<a class="ico ico-whatsapp" target="_blank"
+						href='https://wa.me/34664823177?text=Quiero un presupuesto sin compromiso'><span>664823177</span></a>
+					<a class="ico ico-email" href='mailto:info@juanmanitas.com?Subject=Presupuesto sin compromiso'>
+						<span>info</span><span class="email-txt">@juanmanitas.com</span>
+					</a>
+					<a class="ico ico-tlf" href='tel:+34664823177'><span class="tlf-text">Llámame</span></a>
 				</div>
 			</div>
+		</nav>
+		<nav class="nav-pages">
+			<div class="navigation-bar">
+				<div class="navigation-container">
+					<img class="logo" src="/src/img/svg/logo.svg" alt="Juan Manitas">
+
+					<ul class="pages">
+						<li><a href="#">Bricolaje</a></li>
+						<li><a href="#">Electricidad</a></li>
+						<li><a href="#">Fontaneria</a></li>
+						<li><a href="#">Climatización</a></li>
+						<li><a href="#">Persianas</a></li>
+						<li><a href="#">Montajes</a></li>
+					</ul>
+				</div>
 		</nav>
 	</header>
 	<script src="/src/js/app.js"></script>
 </body>
+
 </html>
