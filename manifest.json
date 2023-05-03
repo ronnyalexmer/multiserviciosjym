@@ -2,7 +2,7 @@
 	"name": "Manitas para todo",
 	"short_name": "Manitas",
 	"start_url": "/index.html",
-	"background_color": "#0F4C81",
+	"background_color": "#011e41",
 	"theme_color": "#f2f2f2",
 	"orientation": "portrait-primary",
 	"display": "minimal-ui",
