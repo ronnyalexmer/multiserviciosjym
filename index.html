@@ -7,6 +7,9 @@
 	<title>Juan Manitas</title>
 	<link rel="manifest" href="/manifest.json">
 	<link rel="stylesheet" href="/src/css/styles.css">
+	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
+	<script src="/src/js/lib/jquery.slim.min.js"></script>
+	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -19,23 +22,34 @@
 					<a class="ico ico-email" href='mailto:info@juanmanitas.com?Subject=Presupuesto sin compromiso'>
 						<span>info</span><span class="email-txt">@juanmanitas.com</span>
 					</a>
-					<a class="ico ico-tlf" href='tel:+34664823177'><span class="tlf-text">Llámame</span></a>
+					<a class="ico ico-tlf" href='tel:+34664823177'><span class="tlf-text">Teléfono</span></a>
 				</div>
 			</div>
 		</nav>
 		<nav class="nav-pages">
 			<div class="navigation-bar">
 				<div class="navigation-container">
-					<span class="ico logo"></span>
+					<a href="/index.html" class="ico logo"><span class="sr-only">Inicio</span></a>
+					<div class="mobile-menu">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+							aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de servicios">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
 
-					<ul class="pages">
-						<li><a href="#">Bricolaje</a></li>
-						<li><a href="#">Electricidad</a></li>
-						<li><a href="#">Fontaneria</a></li>
-						<li><a href="#">Climatización</a></li>
-						<li><a href="#">Persianas</a></li>
-						<li><a href="#">Montajes</a></li>
-					</ul>
+					<div class="collapse navbar-collapse" id="navbarMenu">
+						<ul class="pages">
+							<li><a href="#">Bricolaje</a></li>
+							<li><a href="#">Electricidad</a></li>
+							<li><a href="#">Fontaneria</a></li>
+							<li><a href="#">Climatización</a></li>
+							<li><a href="#">Persianas</a></li>
+							<li><a href="#">Montajes</a></li>
+						</ul>
+					</div>
+
 				</div>
 		</nav>
 	</header>
