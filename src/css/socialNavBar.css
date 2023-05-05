@@ -1,0 +1,67 @@
+/* Navigation Social */
+.header .nav-social {
+    background: var(--primary-color);
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    height: auto;
+
+}
+
+.header .nav-social .socialtop {
+    margin: auto;
+    float: none;
+}
+
+.header .nav-social .socialtop .top-social a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.header .nav-social .socialtop .top-social a:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header .nav-social .socialtop .top-social {
+    padding: 14px 15px;
+    padding-right: 1em;
+}
+
+.header .nav-social .socialtop .top-social a:hover {
+    color: var(--secondary-color);
+}
+
+.header .nav-social .socialtop .top-social a .email-txt {
+    display: none;
+}
+
+/* Mobile fixes */
+@media only screen and (max-width: 343px) {
+    .header .nav-social .socialtop .top-social {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header .nav-social .socialtop .top-social .tlf-text {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+
+    .header .nav-social {
+        height: 3.5em;
+    }
+
+    .header .nav-social .socialtop {
+        float: right;
+        margin-right: 2em;
+    }
+}

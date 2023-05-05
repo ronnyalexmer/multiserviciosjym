@@ -6,7 +6,12 @@
 	<meta name="theme-color" content="#011e41">
 	<title>Juan Manitas</title>
 	<link rel="manifest" href="/manifest.json">
+
 	<link rel="stylesheet" href="/src/css/styles.css">
+	<link rel="stylesheet" href="/src/css/socialNavBar.css">
+	<link rel="stylesheet" href="/src/css/menuNavBar.css">
+	<link rel="stylesheet" href="/src/css/footer.css">
+
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
 	<script src="/src/js/lib/jquery.slim.min.js"></script>
 	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
@@ -54,36 +59,66 @@
 		</nav>
 	</header>
 	<main style="height: 40em;"></main>
-	<footer class="border-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<img class="mb-2" src="/src/img/logo-ico.png" alt="" width="24" height="24">
-					<small class="d-block mb-3 text-muted">&copy; 2023</small>
-				</div>
-				<div class="col-5">
-					<h5>Features</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Cool stuff</a></li>
-						<li><a class="text-muted" href="#">Random feature</a></li>
-						<li><a class="text-muted" href="#">Team feature</a></li>
-						<li><a class="text-muted" href="#">Stuff for developers</a></li>
-						<li><a class="text-muted" href="#">Another one</a></li>
-						<li><a class="text-muted" href="#">Last time</a></li>
-					</ul>
-				</div>
-				<div class="col-5">
-					<h5>About</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Team</a></li>
-						<li><a class="text-muted" href="#">Locations</a></li>
-						<li><a class="text-muted" href="#">Privacy</a></li>
-						<li><a class="text-muted" href="#">Terms</a></li>
-					</ul>
+	<footer class="footer border-top">
+		<div class="pre-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<div class="footer-logo">
+							<img class="mb-2" src="/src/img/logo-ico.png" alt="logo icono">
+							<h5>Sobre Juan Manitas</h5>
+						</div>
+						<p class="footer-description">
+							Juan Manitas es el fontanero y electricista de toda la vida, de confianza y con 20 años de
+							experiencia
+						</p>
+					</div>
+					<div class="col-4">
+						<h5>Servicios</h5>
+						<ul class="list-unstyled">
+							<li><a class="text-footer" href="#">Bricolaje</a></li>
+							<li><a class="text-footer" href="#">Electricidad</a></li>
+							<li><a class="text-footer" href="#">Fontaneria</a></li>
+							<li><a class="text-footer" href="#">Climatización</a></li>
+							<li><a class="text-footer" href="#">Persianas</a></li>
+							<li><a class="text-footer" href="#">Montajes</a></li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<h5>Redes sociales</h5>
+						<ul class="list-unstyled">
+							<li><a class="text-footer" href="#">Whatsapp</a></li>
+							<li><a class="text-footer" href="#">Instagram</a></li>
+							<li><a class="text-footer" href="#">Facebook</a></li>
+							<li><a class="text-footer" href="#">Email</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="text-copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p>© Copyright 2023 Topmanitas. Servicio de manitas a domicilio profesional en toda España. Las
+							marcas comerciales y las marcas mencionadas son propiedad de sus propietarios
+							correspondientes.</p>
+						<p>Este sitio está protegido por reCAPTCHA y se aplican la política de privacidad y términos del
+							servicio de Google.</p>
+						<p>
+							<a href="/pages/aviso-legal.html">Aviso Legal</a> |
+							<a href="/pages/politica-privacidad.html">Política de Privacidad</a> |
+							<a href="/pages/politica-cookies">Política de Cookies</a> |
+							<a href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+						</p>
+						<p>COVID-19: Continuamos aplicando las medidas de seguridad recomendadas por las autoridades
+							sanitarias. Todos nuestros profesionales van a tu domicilio con las mayores condiciones de
+							seguridad.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="/src/js/app.js"></script>
 </body>
