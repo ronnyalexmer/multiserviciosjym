@@ -1,28 +1,26 @@
 .footer .pre-footer {
-    background-color: var(--pijama);
+    background-color: var(--secondary-color);
     padding-top: 2em;
+    color: var(--white)
 }
+
 .footer .col-4 {
     text-align: center;
 }
 
 .footer h5 {
-    border-bottom: solid 1px var(--grey);
+    border-bottom: solid 1px var(--white);
 }
 
 .footer .footer-logo {
-    border-bottom: solid 1px var(--grey);
+    border-bottom: solid 1px var(--white);
     margin-bottom: 1em;
 }
 
-.footer .footer-logo h5{
+.footer .footer-logo h5 {
     border-bottom: none;
 }
 
-.footer .footer-logo img {
-    width: 3em;
-    height: 3em;
-}
 .footer .footer-description {
     text-align: justify;
 }
@@ -45,14 +43,46 @@
 .footer .text-copyright p {
     margin-bottom: 0;
 }
+
 .footer .text-copyright a {
     color: var(--primary-color);
 }
+
 .footer .text-copyright a:hover {
     color: var(--secondary-color);
 }
 
+.footer .logoFooter {
+    display: block;
+    height: 1em;
+}
 
+.logoFooter::before {
+    -o-mask-image: url(../img/svg/logo-ico.svg);
+    -moz-mask-image: url(../img/svg/logo-ico.svg);
+    -webkit-mask-image: url(../img/svg/logo-ico.svg);
+    mask-image: url(../img/svg/logo-ico.svg);
+    background-color: var(--white);
+    transform: scale(0.2);
+    width: 134px;
+    height: 150px;
+    right: 1em;
+    top: -5em;
+}
+
+/* Mobile fixes */
+@media only screen and (max-width: 343px) {
+    .logoFooter::before {
+        right: 1.5em;
+    }
+}
+
+/* Tablets/laptops */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .logoFooter::before {
+        right: 0em;
+    }
+}
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {
@@ -61,14 +91,9 @@
         display: flex;
     }
 
-    .footer .footer-logo img {
-        width: 1.5em;
-        height: 1.5em;
-    }
-
     footer .footer-logo h5::before {
         content: "|";
-        color: var(--grey);
+        color: var(--white);
         font-weight: lighter;
         margin-left: 5px;
         margin-right: 5px;
@@ -76,5 +101,15 @@
 
     .footer .footer-description {
         text-align: justify;
+    }
+
+    .footer .logoFooter {
+        width: 3em;
+        height: 2em;
+    }
+
+    .footer .logoFooter::before {
+        top: -4em;
+        left: -2.5em;
     }
 }

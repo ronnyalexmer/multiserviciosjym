@@ -1,0 +1,72 @@
+.contact-form {}
+
+.contact-form .background-form {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 2em 3em 2em;
+}
+
+.contact-form .background-form::before {
+    content: "";
+    background-image: url('../img/fotos/1.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.contact-form .title {
+    position: relative;
+    color: var(--white);
+    text-shadow: 3px 3px var(--primary-color);
+    text-align: center;
+    margin-left: 3rm;
+    margin-bottom: 2em;
+}
+
+.contact-form .card {
+    background: rgb(255 103 31 / 60%);
+}
+
+.contact-form .card .form-field {
+    margin-bottom: 1em;
+}
+
+.contact-form .contact-button {
+    display: block;
+    width: 50%;
+    color: var(--white);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.contact-form .btn:hover,
+.contact-form .btn:focus,
+.contact-form .btn:active {
+    background-color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 1025px) {
+    .background-form {
+        padding: 2em 5em 3em 5em;
+    }
+
+    .contact-form .card {
+        max-width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5em;
+    }
+}

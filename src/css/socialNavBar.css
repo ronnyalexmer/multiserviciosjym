@@ -24,8 +24,8 @@
 }
 
 .header .nav-social .socialtop .top-social a:nth-child(2) {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .header .nav-social .socialtop .top-social {
@@ -52,6 +52,16 @@
         display: none;
     }
 }
+
+/* Tablets/laptops */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .header .nav-social .socialtop .top-social a:nth-child(2) {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {

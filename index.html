@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="/src/css/styles.css">
 	<link rel="stylesheet" href="/src/css/socialNavBar.css">
 	<link rel="stylesheet" href="/src/css/menuNavBar.css">
+	<link rel="stylesheet" href="/src/css/contact-form.css">
 	<link rel="stylesheet" href="/src/css/footer.css">
 
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
@@ -58,14 +59,54 @@
 				</div>
 		</nav>
 	</header>
-	<main style="height: 40em;"></main>
+	<main style="min-height: 40em;">
+
+		<section class="contact-form">
+			<div class="background-form">
+				<h3 class="title font-weight-bold">Pide tu presupuesto</h3>
+				<form class="mx-md-5" action="">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-body px-4">
+									<div class="form-field">
+										<input type="text" class="form-control" placeholder="Nombre">
+									</div>
+									<div class="form-field">
+										<input type="number" class="form-control" placeholder="Teléfono (Sin espacios, y sin +34)">
+									</div>
+									<div class="form-field">
+										<input type="text" class="form-control" placeholder="Correo electrónico">
+									</div>
+									<div class="form-field">
+										<textarea class="md-textarea form-control" rows="3" placeholder="¿Qué necesitas?"></textarea>
+									</div>
+
+									<button type="button" class="btn contact-button">Enviar</button>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-5">
+							<div class="icons">
+								
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+	</main>
 	<footer class="footer border-top">
 		<div class="pre-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-4">
 						<div class="footer-logo">
-							<img class="mb-2" src="/src/img/logo-ico.png" alt="logo icono">
+							<i class="ico logoFooter"></i>
 							<h5>Sobre Juan Manitas</h5>
 						</div>
 						<p class="footer-description">
@@ -101,7 +142,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<p>© Copyright 2023 Topmanitas. Servicio de manitas a domicilio profesional en toda España. Las
+						<p>© Copyright 2023 "Juan Manitas". Servicio de manitas a domicilio profesional en toda España.
+							Las
 							marcas comerciales y las marcas mencionadas son propiedad de sus propietarios
 							correspondientes.</p>
 						<p>Este sitio está protegido por reCAPTCHA y se aplican la política de privacidad y términos del
