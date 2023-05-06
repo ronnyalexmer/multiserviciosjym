@@ -1,9 +1,12 @@
 :root {
 	--primary-color: #c0efdf;
+	--primary-color-rgb: 192, 239, 223;
 	--primary-hover-color: #D1FFF0;
 	--secondary-color: #9ce2f6;
+	--secondary-color-rgb: 156, 226, 246;
 	--text-color: #404040;
 	--white: #fffffd;
+	--white-rgb: 255, 255, 253;
 	--grey: #444;
 	--pijama: #f9f9f9;
 	--whatsapp-color: #25D366;
@@ -22,9 +25,7 @@ body {
 }
 
 /* Mobile fixes */
-@media only screen and (max-width: 343px) {
-
-}
+@media only screen and (max-width: 343px) {}
 
 
 /* Tablets/laptops */
@@ -32,8 +33,7 @@ body {
 
 
 /* Desktop */
-@media only screen and (min-width: 1025px) {
-}
+@media only screen and (min-width: 1025px) {}
 
 
 
@@ -50,6 +50,7 @@ body {
 	margin-right: 5px;
 	mask-repeat: no-repeat;
 	-webkit-mask-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .ico-whatsapp:before {
@@ -57,6 +58,23 @@ body {
 	-moz-mask-image: url(../img/svg/ico-whatsapp.svg);
 	-webkit-mask-image: url(../img/svg/ico-whatsapp.svg);
 	mask-image: url(../img/svg/ico-whatsapp.svg);
+}
+
+.ico-whatsapp-color:before {
+	background-image: url(../img/svg/ico-whatsapp-color.svg);
+	background-color: transparent;
+}
+
+.ico-instagram:before {
+	-o-mask-image: url(../img/svg/ico-instagram.svg);
+	-moz-mask-image: url(../img/svg/ico-instagram.svg);
+	-webkit-mask-image: url(../img/svg/ico-instagram.svg);
+	mask-image: url(../img/svg/ico-instagram.svg);
+}
+
+.ico-instagram-color:before {
+	background-image: url(../img/svg/ico-instagram-color.svg);
+	background-color: transparent;
 }
 
 .ico-email:before {
@@ -71,6 +89,11 @@ body {
 	-moz-mask-image: url(../img/svg/ico-tlf.svg);
 	-webkit-mask-image: url(../img/svg/ico-tlf.svg);
 	mask-image: url(../img/svg/ico-tlf.svg);
+}
+
+.ico-taskrabbit-color:before {
+	background-image: url(../img/svg/ico-taskrabbit-color.svg);
+	background-color: transparent;
 }
 
 .logo:before {
