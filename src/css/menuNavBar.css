@@ -7,15 +7,20 @@
 	margin-left: 0em;
 }
 
+.header .nav-pages .img-logo {
+	width: 8em;
+	margin-left: 2em;
+}
+
 .header .nav-pages .navigation-container {
 	width: inherit;
 	margin: 0 auto;
-	height: 70px;
+	height: 80px;
 }
 
 .header .nav-pages .navigation-bar {
-	background-color: var(--secondary-color);
-	height: 70px;
+	background-color: var(--white);
+	height: 80px;
 	width: 100%;
 	display: flex;
 }
@@ -23,13 +28,13 @@
 .header .nav-pages .navigation-bar .mobile-menu {
 	float: right;
 	margin-right: 2em;
-	height: 70px;
+	height: 80px;
 	display: flex;
 	align-items: center;
 }
 
 .header .nav-pages .navigation-bar .navbar-toggler {
-	border-color: var(--grey);
+	border-color: var(--text-color);
 }
 
 .header .nav-pages .navigation-bar .navbar-toggler:focus {
@@ -42,13 +47,13 @@
 	width: 30px;
 	height: 2px;
 	margin: 6px auto;
-	background: var(--white);
+	background: var(--text-color);
 	transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
 }
 
 .header .nav-pages .navigation-bar .navbar-toggler:hover span,
 .header .nav-pages .navigation-bar .navbar-toggler:focus span {
-	background: var(--white-body);
+	background: var(--text-color);
 }
 
 /* rotate first span */
@@ -87,14 +92,14 @@
 	display: flex;
 	text-align: center;
 	width: 100%;
-	background-color: var(--secondary-color-white);
+	background-color: var(--primary-color);
 }
 
 .header .nav-pages .navigation-bar .navbar-collapse.show {
 	display: flex;
 	width: 100%;
 	text-align: center;
-	background-color: var(--secondary-color-white);
+	background-color: var(--primary-color);
 }
 
 .header .nav-pages .navigation-bar .navbar-collapse li {
@@ -104,11 +109,11 @@
 }
 
 .header .nav-pages .navigation-bar .pages li:hover {
-	background-color: var(--primary-color);
+	background-color: var(--primary-hover-color);
 }
 
 .header .nav-pages .navigation-bar .pages li a {
-	color: var(--white);
+	color: var(--text-color);
 	font-size: 16px;
 	text-decoration: none;
 	padding-right: 15px;
@@ -123,7 +128,7 @@
 		float: left;
 		margin-left: 2em;
 		width: 16em;
-		height: 70px;
+		height: 80px;
 	}
 
 	.header .nav-pages .navigation-bar .logo:before {
@@ -142,7 +147,7 @@
 		float: right;
 		margin-right: 2em;
 		margin-bottom: 0;
-		height: 70px;
+		height: 80px;
 		width: auto;
 	}
 
@@ -165,7 +170,15 @@
 
 /* Desktop */
 @media only screen and (min-width: 1038px) {
+	.header .nav-pages .navigation-container {
+		display: flex;
+	}
+
     .header .nav-pages .navigation-bar .pages li {
-		margin-left: 0.5em;
+		padding-left: 0.5em;
+	}
+
+	.header .nav-pages .navigation-bar .pages li:hover {
+		background-color: var(--primary-color);
 	}
 }

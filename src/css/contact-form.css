@@ -12,25 +12,27 @@
     content: "";
     background-image: url('../img/fotos/1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .contact-form .title {
     position: relative;
-    color: var(--white);
-    text-shadow: 3px 3px var(--primary-color);
+    color: var(--text-color);
+    /*text-shadow: 3px 3px var(--white);*/
     text-align: center;
     margin-left: 3rm;
     margin-bottom: 2em;
 }
 
 .contact-form .card {
-    background: rgb(255 103 31 / 60%);
+    background: rgb(192 239 223 / 60%);
 }
 
 .contact-form .card .form-field {
@@ -40,7 +42,7 @@
 .contact-form .contact-button {
     display: block;
     width: 50%;
-    color: var(--white);
+    color: var(--text-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +57,7 @@
     text-decoration: none !important;
     border: none !important;
     outline: none !important;
-    color: var(--white);
+    color: var(--text-color);
 }
 
 @media only screen and (min-width: 1025px) {

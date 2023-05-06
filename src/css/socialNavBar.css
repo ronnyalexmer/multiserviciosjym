@@ -5,7 +5,6 @@
     width: 100%;
     text-align: center;
     height: auto;
-
 }
 
 .header .nav-social .socialtop {
@@ -17,24 +16,52 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-    color: var(--white);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 14px;
-
-}
-
-.header .nav-social .socialtop .top-social a:nth-child(2) {
-    margin-left: 1em;
-    margin-right: 1em;
+    font-weight: bolder;
 }
 
 .header .nav-social .socialtop .top-social {
-    padding: 14px 15px;
-    padding-right: 1em;
+    display: flex;
 }
 
 .header .nav-social .socialtop .top-social a:hover {
-    color: var(--secondary-color);
+    /*color: var(--secondary-color);*/
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-whatsapp::before {
+    background-color: var(--whatsapp-color);
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-email::before {
+    background-color: var(--email-color);
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-tlf::before {
+    background-color: var(--tlf-color);
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li:last-child {
+    background-color: var(--secondary-color);
+}
+
+.header .nav-social .socialtop .top-social .list-unstyled li:hover {
+    background-color: var(--secondary-color);
 }
 
 .header .nav-social .socialtop .top-social a .email-txt {
@@ -42,7 +69,7 @@
 }
 
 /* Mobile fixes */
-@media only screen and (max-width: 343px) {
+@media only screen and (max-width: 364px) {
     .header .nav-social .socialtop .top-social {
         padding-right: 0;
         padding-left: 0;
@@ -54,12 +81,7 @@
 }
 
 /* Tablets/laptops */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-    .header .nav-social .socialtop .top-social a:nth-child(2) {
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {}
 
 
 
@@ -72,6 +94,24 @@
 
     .header .nav-social .socialtop {
         float: right;
-        margin-right: 2em;
     }
+
+    .header .nav-social .socialtop .top-social .list-unstyled {
+        height: 3.5em;
+    }
+
+    .header .nav-social .socialtop .top-social .list-unstyled li {
+        width: initial;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+
+    .header .nav-social .socialtop .top-social .list-unstyled li:last-child {
+        background-color: var(--secondary-color);
+        padding-right: 2em;
+    }
+
+
+
 }

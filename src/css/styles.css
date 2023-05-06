@@ -1,11 +1,14 @@
 :root {
-	--primary-color: #011e41;
-	--secondary-color: #ff671f;
-	--secondary-color-white: #eb936b;
-	--white-body: #fff;
-	--white: #fff;
+	--primary-color: #c0efdf;
+	--primary-hover-color: #D1FFF0;
+	--secondary-color: #9ce2f6;
+	--text-color: #404040;
+	--white: #fffffd;
 	--grey: #444;
 	--pijama: #f9f9f9;
+	--whatsapp-color: #25D366;
+	--email-color: #DB4437;
+	--tlf-color: #0b6bea;
 }
 
 * {
@@ -15,7 +18,7 @@
 }
 
 body {
-	background-color: var(--white-body);
+	background-color: var(--white);
 }
 
 /* Mobile fixes */
@@ -56,10 +59,6 @@ body {
 	mask-image: url(../img/svg/ico-whatsapp.svg);
 }
 
-.ico-whatsapp:hover:before {
-	background-color: #25D366;
-}
-
 .ico-email:before {
 	-o-mask-image: url(../img/svg/ico-email.svg);
 	-moz-mask-image: url(../img/svg/ico-email.svg);
@@ -67,19 +66,11 @@ body {
 	mask-image: url(../img/svg/ico-email.svg);
 }
 
-.ico-email:hover:before {
-	background-color: #DB4437;
-}
-
 .ico-tlf:before {
 	-o-mask-image: url(../img/svg/ico-tlf.svg);
 	-moz-mask-image: url(../img/svg/ico-tlf.svg);
 	-webkit-mask-image: url(../img/svg/ico-tlf.svg);
 	mask-image: url(../img/svg/ico-tlf.svg);
-}
-
-.ico-tlf:hover:before {
-	background-color: #0b6bea;
 }
 
 .logo:before {

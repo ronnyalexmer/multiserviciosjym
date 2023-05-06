@@ -1,7 +1,7 @@
 .footer .pre-footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding-top: 2em;
-    color: var(--white)
+    color: var(--text-color)
 }
 
 .footer .col-4 {
@@ -9,16 +9,12 @@
 }
 
 .footer h5 {
-    border-bottom: solid 1px var(--white);
+    border-bottom: solid 1px var(--text-color);
+    text-align: center;
 }
 
-.footer .footer-logo {
-    border-bottom: solid 1px var(--white);
-    margin-bottom: 1em;
-}
-
-.footer .footer-logo h5 {
-    border-bottom: none;
+.footer .list-unstyled {
+    text-align: center;
 }
 
 .footer .footer-description {
@@ -26,14 +22,14 @@
 }
 
 .footer .text-footer {
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .footer .text-copyright {
-    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
-    background-color: var(--white-body);
-    margin-bottom: 2em;
+    background-color: var(--text-color);
 }
 
 .footer .text-copyright .container {
@@ -42,6 +38,7 @@
 
 .footer .text-copyright p {
     margin-bottom: 0;
+    color: var(--white);
 }
 
 .footer .text-copyright a {
@@ -52,21 +49,17 @@
     color: var(--secondary-color);
 }
 
-.footer .logoFooter {
-    display: block;
-    height: 1em;
-}
 
 .logoFooter::before {
     -o-mask-image: url(../img/svg/logo-ico.svg);
     -moz-mask-image: url(../img/svg/logo-ico.svg);
     -webkit-mask-image: url(../img/svg/logo-ico.svg);
     mask-image: url(../img/svg/logo-ico.svg);
-    background-color: var(--white);
-    transform: scale(0.2);
-    width: 134px;
-    height: 150px;
-    right: 1em;
+    background-color: var(--text-color);
+    transform: scale(0.1);
+    width: 470px;
+    height: 395px;
+    right: 12em;
     top: -5em;
 }
 
@@ -89,14 +82,6 @@
 
     .footer .footer-logo {
         display: flex;
-    }
-
-    footer .footer-logo h5::before {
-        content: "|";
-        color: var(--white);
-        font-weight: lighter;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     .footer .footer-description {
