@@ -1,10 +1,9 @@
 const cacheName = "site-static";
-const assets = [ 
-    "/", "/index.html", "/src/js/app.js", "/src/css/styles.css",
-    "/src/elements/head.html", "/src/elements/header.html",
-    "/src/elements/footer.html", "/src/img/logo.png",
-    "/pages/bricolaje.html", "/pages/electricidad.html",
-    "/pages/fontaneria.html"
+const assets = [
+    "/", "/index.html", "/src/js/app.js",
+    "/src/css/lib/bootstrap.min.css", "/src/css/styles.css", "/src/css/contact-form.css", "/src/css/footer.css",
+    "/src/css/included-services.css", "/src/css/menu-navbar.css", "/src/css/services-section.css", "/src/css/services-social-navbar.css",
+    "/src/img/logo.jpg",
 ]
 
 self.addEventListener("install", event => {
