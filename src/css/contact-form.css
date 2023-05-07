@@ -10,7 +10,7 @@
 
 .contact-form .background-form::before {
     content: "";
-    background-image: url('../img/fotos/1.jpg');
+    background-image: url("../img/fotos/contact-form.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
