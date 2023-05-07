@@ -1,0 +1,25 @@
+.services-section {
+	overflow: hidden;
+	text-align: center;
+	background-color: var(--pijama);
+}
+
+.services-section .title {
+	padding-top: 2em;
+}
+
+
+@media only screen and (min-width: 1025px) {
+	.services-section .container-section {
+		display: flex;
+	}
+
+	.services-section .container-section div {
+		width: 33%;
+	}
+
+	.services-section .electricidad {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}

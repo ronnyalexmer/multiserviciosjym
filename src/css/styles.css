@@ -7,8 +7,8 @@
 	--text-color: #404040;
 	--white: #fffffd;
 	--white-rgb: 255, 255, 253;
-	--grey: #444;
-	--pijama: #f9f9f9;
+	--grey: #797979;
+	--pijama: #f9f9f9c5;
 	--whatsapp-color: #25D366;
 	--email-color: #DB4437;
 	--tlf-color: #0b6bea;
@@ -22,6 +22,10 @@
 
 body {
 	background-color: var(--white);
+}
+
+main {
+	min-height: 40em;
 }
 
 /* Mobile fixes */
@@ -40,7 +44,7 @@ body {
 
 .ico:before {
 	content: "";
-	background-color: currentColor;
+	background-color: var(--grey);
 	background-size: contain;
 	width: 20px;
 	height: 20px;
@@ -94,6 +98,27 @@ body {
 .ico-taskrabbit-color:before {
 	background-image: url(../img/svg/ico-taskrabbit-color.svg);
 	background-color: transparent;
+}
+
+.ico-budget:before {
+	-o-mask-image: url(../img/svg/ico-budget.svg);
+	-moz-mask-image: url(../img/svg/ico-budget.svg);
+	-webkit-mask-image: url(../img/svg/ico-budget.svg);
+	mask-image: url(../img/svg/ico-budget.svg);
+}
+
+.ico-transport:before {
+	-o-mask-image: url(../img/svg/ico-transport.svg);
+	-moz-mask-image: url(../img/svg/ico-transport.svg);
+	-webkit-mask-image: url(../img/svg/ico-transport.svg);
+	mask-image: url(../img/svg/ico-transport.svg);
+}
+
+.ico-booked:before {
+	-o-mask-image: url(../img/svg/ico-booked.svg);
+	-moz-mask-image: url(../img/svg/ico-booked.svg);
+	-webkit-mask-image: url(../img/svg/ico-booked.svg);
+	mask-image: url(../img/svg/ico-booked.svg);
 }
 
 .logo:before {
