@@ -7,7 +7,7 @@ const assets = [
     "/src/img/section-fontaneria.jpg", "/src/img/section-climatizacion.jpg", "/src/img/section-reformas.jpg", "/src/img/section-montajes.jpg",
     "/src/img/svg/ico-booked.svg", "/src/img/svg/ico-budget.svg", "/src/img/svg/ico-email.svg", "/src/img/svg/ico-instagram-color.svg", "/src/img/svg/ico-instagram.svg",
     "/src/img/svg/ico-taskrabbit-color.svg", "/src/img/svg/ico-taskrabbit.svg", "/src/img/svg/ico-tlf.svg", "/src/img/svg/ico-transport.svg", "/src/img/svg/ico-whatsapp-color.svg", 
-    "/src/img/svg/ico-whatsapp.svg", "/src/img/svg/logo-ico.svg"
+    "/src/img/svg/ico-whatsapp.svg", "/src/img/svg/ico-logo.svg"
 ]
 
 self.addEventListener("install", event => {
@@ -23,5 +23,9 @@ self.addEventListener("active", event => {
 });
 
 self.addEventListener("fetch", event => {
-    console.log("Fetch event", event);
+    event.responseWith(
+        caches.match(event.request).then(response => {
+            return response || fetch(event.request);
+        })
+    );
 });
