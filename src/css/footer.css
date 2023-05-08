@@ -51,10 +51,10 @@
 
 
 .logoFooter::before {
-    -o-mask-image: url(../img/svg/logo-ico.svg);
-    -moz-mask-image: url(../img/svg/logo-ico.svg);
-    -webkit-mask-image: url(../img/svg/logo-ico.svg);
-    mask-image: url(../img/svg/logo-ico.svg);
+    -o-mask-image: url(../img/svg/ico-logo.svg);
+    -moz-mask-image: url(../img/svg/ico-logo.svg);
+    -webkit-mask-image: url(../img/svg/ico-logo.svg);
+    mask-image: url(../img/svg/ico-logo.svg);
     background-color: var(--text-color);
     transform: scale(0.1);
     width: 470px;

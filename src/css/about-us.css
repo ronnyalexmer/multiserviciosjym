@@ -1,0 +1,20 @@
+.about-us {
+    overflow: hidden;
+    padding-top: 3em;
+    background-color: var(--white);
+}
+
+.about-us .title {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.about-us .title strong {
+    font-size: 1.75rem;
+}
+
+.about-us .container-description p:last-child {
+    text-align: justify;
+    border-bottom: solid 1px var(--grey);
+    padding-bottom: 3em;
+}

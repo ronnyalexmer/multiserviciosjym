@@ -154,11 +154,9 @@
 
 	.header .nav-pages .navigation-bar .pages {
 		flex-direction: initial;
-		padding-right: 1em;
 		text-align: center;
 		list-style-type: none;
 		float: right;
-		margin-right: 2em;
 		margin-bottom: 0;
 		height: 80px;
 		width: auto;

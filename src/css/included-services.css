@@ -2,63 +2,15 @@
 	overflow: hidden;
 	text-align: center;
 	background-color: var(--white);
+	margin-bottom: 6em;
 }
 
 .included-services .container-services {
 	padding-top: 5em;
 }
 
-.included-services .text-services {
-	margin-bottom: 3em;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
-.included-services span.ico {
-	display: block;
-	height: 2em;
-	width: 2em;
-}
-
 .included-services span.ico::before {
 	background-color: var(--secondary-color);
-	right: 10em;
-}
-
-.included-services span.ico-budget::before {
-	width: 683px;
-	height: 683px;
-	transform: scale(0.1);
-	top: -22em;
-}
-
-.included-services span.ico-transport::before {
-	width: 683px;
-	height: 683px;
-	transform: scale(0.1);
-	top: -21em;
-}
-
-.included-services span.ico-booked::before {
-	width: 683px;
-	height: 683px;
-	transform: scale(0.1);
-	top: -21em;
-}
-
-
-@media only screen and (min-width: 1025px) {
-	.included-services .container-services {
-		display: flex;
-
-	}
-
-	.included-services .container-services div {
-		width: 33%;
-	}
-
-	.included-services .transport {
-		margin-left: 1em;
-		margin-right: 1em;
-	}
+	width: 70px;
+	height: 70px;
 }
