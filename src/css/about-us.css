@@ -14,7 +14,6 @@
 }
 
 .about-us .container-description p:last-child {
-    text-align: justify;
     border-bottom: solid 1px var(--grey);
     padding-bottom: 3em;
 }

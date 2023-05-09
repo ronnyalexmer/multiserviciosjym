@@ -8,17 +8,13 @@
     text-align: center;
 }
 
-.footer h5 {
+.footer h4 {
     border-bottom: solid 1px var(--text-color);
     text-align: center;
 }
 
 .footer .list-unstyled {
     text-align: center;
-}
-
-.footer .footer-description {
-    text-align: justify;
 }
 
 .footer .text-footer {
@@ -47,6 +43,10 @@
 
 .footer .text-copyright a:hover {
     color: var(--secondary-color);
+}
+
+.footer .text-copyright a:link {
+    text-decoration: underline;
 }
 
 
@@ -82,10 +82,6 @@
 
     .footer .footer-logo {
         display: flex;
-    }
-
-    .footer .footer-description {
-        text-align: justify;
     }
 
     .footer .logoFooter {

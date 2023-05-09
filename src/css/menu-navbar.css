@@ -109,20 +109,23 @@
 	background-color: var(--primary-color);
 }
 
-.header .nav-pages .navigation-bar .navbar-collapse li {
+.header .nav-pages .navigation-bar .navbar-collapse .pages li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
+	align-items: center;
 }
 
-.header .nav-pages .navigation-bar .navbar-collapse li .title {
+.header .nav-pages .navigation-bar .navbar-collapse .pages li .title {
 	font-size: inherit;
 	margin: inherit;
 	padding: inherit;
 }
 
+.header .nav-pages .navigation-bar .pages li.active,
 .header .nav-pages .navigation-bar .pages li:hover {
 	background-color: var(--primary-hover-color);
+	border-left: solid 5px var(--secondary-color);
 }
 
 .header .nav-pages .navigation-bar .pages li a {
@@ -137,11 +140,33 @@
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {
+	.header .nav-pages .navigation-container {
+		display: flex;
+	}
+
+	.header .nav-pages .navigation-bar .pages li {
+		padding-left: 0.1em;
+		padding-right: 0.1em;
+	}
+
+	.header .nav-pages .navigation-bar .navbar-collapse li .title {
+		display: flex;
+		text-align: center;
+		align-items: center;
+	}
+
+
+	.header .nav-pages .navigation-bar .pages li.active,
+	.header .nav-pages .navigation-bar .pages li:hover {
+		background-color: var(--primary-color);
+		border-bottom: solid 5px var(--secondary-color);
+		border-left: unset;
+	}
+
 	.header .nav-pages .navigation-bar .logo {
 		float: left;
 		margin-left: 2em;
 		width: 16em;
-		height: 80px;
 	}
 
 	.header .nav-pages .navigation-bar .logo:before {
@@ -171,30 +196,12 @@
 	.header .nav-pages .navigation-bar .mobile-menu {
 		display: none;
 	}
-
 }
 
 /* Desktop */
-@media only screen and (min-width: 1025px) {
-	.header .nav-pages .navigation-container {
-		display: flex;
-	}
-
+@media only screen and (min-width: 1400px) {
 	.header .nav-pages .navigation-bar .pages li {
 		padding-left: 0.5em;
 		padding-right: 0.5em;
-	}
-
-
-	.header .nav-pages .navigation-bar .navbar-collapse li .title {
-
-		display: flex;
-		text-align: center;
-		align-items: center;
-	}
-
-
-	.header .nav-pages .navigation-bar .pages li:hover {
-		background-color: var(--primary-color);
 	}
 }

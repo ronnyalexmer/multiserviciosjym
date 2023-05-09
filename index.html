@@ -8,10 +8,15 @@
 	<meta name="description"
 		content="Soluciones en el campo de la construcción, incluyendo casas, pisos, locales y comunidades. Nos especializamos en reformas, instalaciones, reparaciones, montajes">
 
+	<meta property="og:site_name" content="Instalaciones y Reformas - Garox">
+	<meta property="og:title" content="Instalaciones y Reformas - Garox" />
+	<meta property="og:description" content="Instalaciones y Reformas" />
+	<meta property="og:image" itemprop="image" content="/src/img/favicon/garox.jpg">
+	<meta property="og:type" content="website" />
+	<meta property="og:updated_time" content="1683657870" />
+
 	<link rel="icon" type="image/x-icon" href="/src/img/favicon/favicon.ico">
-
 	<link rel="manifest" href="/manifest.json">
-
 	<link rel="stylesheet" href="/src/css/styles.css">
 	<link rel="stylesheet" href="/src/css/social-navbar.css">
 	<link rel="stylesheet" href="/src/css/menu-navbar.css">
@@ -69,23 +74,26 @@
 
 					<div class="collapse navbar-collapse" id="navbarMenu">
 						<ul class="pages">
-							<li>
-								<h2 class="title"><a href="/pages/instalaciones.html">Instalaciones</a></h2>
+							<li class="active">
+								<a href="/index.html">Inicio</a>
 							</li>
 							<li>
-								<h2 class="title"><a href="/pages/reformas.html">Reformas</a></h2>
+								<a href="/pages/instalaciones.html">Instalaciones</a>
 							</li>
 							<li>
-								<h2 class="title"><a href="#">Electricidad</a></h2>
+								<a href="/pages/reformas.html">Reformas</a>
 							</li>
 							<li>
-								<h2 class="title"><a href="#">Fontaneria</a></h2>
+								<a href="#">Electricidad</a>
 							</li>
 							<li>
-								<h2 class="title"><a href="#">Climatización</a></h2>
+								<a href="#">Fontaneria</a>
 							</li>
 							<li>
-								<h2 class="title"><a href="#">Montajes</a></h2>
+								<a href="#">Climatización</a>
+							</li>
+							<li>
+								<a href="#">Montajes</a>
 							</li>
 						</ul>
 					</div>
@@ -97,7 +105,7 @@
 	<main>
 		<section class="contact-form">
 			<div class="background-form">
-				<strong class="title">Pide tu presupuesto</strong>
+				<h2 class="title">Pide tu presupuesto</h2>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
@@ -107,7 +115,8 @@
 										<input type="text" class="form-control" placeholder="Nombre">
 									</div>
 									<div class="form-field">
-										<input type="number" class="form-control"
+										<label for="phone" class="sr-only">Teléfono</label>
+										<input type="number" class="form-control" id="phone"
 											placeholder="Teléfono (Sin espacios, y sin +34)">
 									</div>
 									<div class="form-field">
@@ -126,12 +135,16 @@
 										</p>
 										<div class="contact-social-icons">
 											<a href="https://wa.me/34664823177?text=Quiero un presupuesto sin compromiso"
-												target="_blank" class="ico ico-whatsapp-color"></a>
+												target="_blank" class="ico ico-whatsapp-color"
+												aria-label="Contacta por Whatsapp">
+												<span class="sr-only">Contacta por Whatsapp</span></a>
 											<a href="https://www.instagram.com/garoxinst" target="_blank"
-												class="ico ico-instagram-color"></a>
+												aria-label="Perfil de Instagram" class="ico ico-instagram-color"><span
+													class="sr-only">Perfil de Instagram</span></a>
 											<a href="https://www.taskrabbit.es/es/es/profile/garoxinst" target="_blank"
-												class="ico ico-taskrabbit-color"></a>
-
+												aria-label="Perfil de Task Rabbit"
+												class="ico ico-taskrabbit-color"><span class="sr-only">Perfil de Task
+													Rabbit</span></a>
 										</div>
 									</div>
 								</form>
@@ -147,12 +160,16 @@
 								</p>
 								<div class="contact-social-icons">
 									<a href="https://wa.me/34664823177?text=Quiero un presupuesto sin compromiso"
-										target="_blank" class="ico ico-whatsapp-color"></a>
+										target="_blank" class="ico ico-whatsapp-color"
+										aria-label="Contacta por Whatsapp">
+										<span class="sr-only">Contacta por Whatsapp</span></a>
 									<a href="https://www.instagram.com/garoxinst" target="_blank"
-										class="ico ico-instagram-color"></a>
+										aria-label="Perfil de Instagram" class="ico ico-instagram-color"><span
+											class="sr-only">Perfil de Instagram</span></a>
 									<a href="https://www.taskrabbit.es/es/es/profile/garoxinst" target="_blank"
-										class="ico ico-taskrabbit-color"></a>
-
+										aria-label="Perfil de Task Rabbit" class="ico ico-taskrabbit-color"><span
+											class="sr-only">Perfil de Task
+											Rabbit</span></a>
 								</div>
 							</div>
 						</div>
@@ -164,7 +181,7 @@
 
 		<section class="about-us">
 			<div class="title">
-				<strong>Sobre Garox</strong>
+				<h2>Sobre Garox</h2>
 			</div>
 
 			<div class="container container-description">
@@ -229,7 +246,7 @@
 
 		<section class="services-section">
 			<div class="title">
-				<strong>Nuestros Servicios</strong>
+				<h2>Especialistas en construcción</h2>
 			</div>
 
 			<div class="container container-section">
@@ -310,13 +327,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-4">
-						<h5 class="">Información Secundaria</h5>
+						<h4 class="">Información Secundaria</h4>
 						<p class="footer-description">
 							Texto de información breve y secundaria, remarcar que solo ha de ir un párrafo aquí
 						</p>
 					</div>
 					<div class="col-6 col-sm-6 col-md-4">
-						<h5>Servicios</h5>
+						<h4>Servicios</h4>
 						<ul class="list-unstyled">
 							<li><a class="text-footer" href="/pages/instalaciones.html">Instalaciones</a></li>
 							<li><a class="text-footer" href="#">Reformas</a></li>
@@ -327,7 +344,7 @@
 						</ul>
 					</div>
 					<div class="col-6 col-sm-6 col-md-4">
-						<h5>Redes sociales</h5>
+						<h4>Redes sociales</h4>
 						<ul class="list-unstyled">
 							<li><a class="text-footer" href="#">Whatsapp</a></li>
 							<li><a class="text-footer" href="#">Instagram</a></li>
