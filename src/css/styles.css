@@ -12,6 +12,12 @@
 	--whatsapp-color: #25D366;
 	--email-color: #DB4437;
 	--tlf-color: #0b6bea;
+	--electricity-color: #FFFF00;
+	--water-color: #0b6bea;
+	--temperature-color: #DB4437;
+	--bath-color: #9e9e9e;
+	--kitchen-color: #ec0fa2;
+	--building-color: #000000;
 }
 
 * {
@@ -119,6 +125,55 @@ main {
 	-moz-mask-image: url(../img/svg/ico-booked.svg);
 	-webkit-mask-image: url(../img/svg/ico-booked.svg);
 	mask-image: url(../img/svg/ico-booked.svg);
+}
+
+.ico-check::before {
+	-o-mask-image: url(../img/svg/ico-check.svg);
+	-moz-mask-image: url(../img/svg/ico-check.svg);
+	-webkit-mask-image: url(../img/svg/ico-check.svg);
+	mask-image: url(../img/svg/ico-check.svg);
+}
+
+.ico-electricity::before {
+	-o-mask-image: url(../img/svg/ico-electricity.svg);
+	-moz-mask-image: url(../img/svg/ico-electricity.svg);
+	-webkit-mask-image: url(../img/svg/ico-electricity.svg);
+	mask-image: url(../img/svg/ico-electricity.svg);
+}
+
+.ico-water::before {
+	-o-mask-image: url(../img/svg/ico-water.svg);
+	-moz-mask-image: url(../img/svg/ico-water.svg);
+	-webkit-mask-image: url(../img/svg/ico-water.svg);
+	mask-image: url(../img/svg/ico-water.svg);
+}
+
+.ico-temperature::before {
+	-o-mask-image: url(../img/svg/ico-temperature.svg);
+	-moz-mask-image: url(../img/svg/ico-temperature.svg);
+	-webkit-mask-image: url(../img/svg/ico-temperature.svg);
+	mask-image: url(../img/svg/ico-temperature.svg);
+}
+
+.ico-bath::before {
+	-o-mask-image: url(../img/svg/ico-bath.svg);
+	-moz-mask-image: url(../img/svg/ico-bath.svg);
+	-webkit-mask-image: url(../img/svg/ico-bath.svg);
+	mask-image: url(../img/svg/ico-bath.svg);
+}
+
+.ico-kitchen::before {
+	-o-mask-image: url(../img/svg/ico-kitchen.svg);
+	-moz-mask-image: url(../img/svg/ico-kitchen.svg);
+	-webkit-mask-image: url(../img/svg/ico-kitchen.svg);
+	mask-image: url(../img/svg/ico-kitchen.svg);
+}
+
+.ico-building::before {
+	-o-mask-image: url(../img/svg/ico-building.svg);
+	-moz-mask-image: url(../img/svg/ico-building.svg);
+	-webkit-mask-image: url(../img/svg/ico-building.svg);
+	mask-image: url(../img/svg/ico-building.svg);
 }
 
 .link-effect {
