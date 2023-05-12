@@ -136,6 +136,8 @@
 	padding-left: 15px;
 	font-weight: bolder;
 	text-align: center;
+	height: 100%;
+    padding-top: 1.4em;
 }
 
 /* Desktop */

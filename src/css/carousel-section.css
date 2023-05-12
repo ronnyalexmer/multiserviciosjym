@@ -5,6 +5,11 @@
 	background-position: center center !important;
 }
 
+
+.carousel-section .carousel-item img {
+	height: 300px;
+}
+
 .carousel-section .carousel-caption {
 	background: rgba(var(--secondary-color-rgb), 0.6);
 	width: 100%;
@@ -30,6 +35,11 @@
 @media only screen and (min-width: 1025px) {
 	.carousel-section .carousel-caption {
 		position: absolute;
+	}
+
+	.carousel-section .carousel-item img {
+		height: unset;
+		max-height: 600px;
 	}
 
 }

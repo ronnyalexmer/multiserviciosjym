@@ -1,19 +1,19 @@
-.about-us {
+.paragraph-text {
     overflow: hidden;
     padding-top: 3em;
     background-color: var(--white);
 }
 
-.about-us .title {
+.paragraph-text .title {
     margin-bottom: 3em;
     text-align: center;
 }
 
-.about-us .title strong {
+.paragraph-text .title strong {
     font-size: 1.75rem;
 }
 
-.about-us .container-description p:last-child {
+.paragraph-text .container-description p:last-child {
     border-bottom: solid 1px var(--grey);
     padding-bottom: 3em;
 }

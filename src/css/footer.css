@@ -64,6 +64,15 @@
     top: -5em;
 }
 
+.footer .container-schedule {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.footer .container-schedule p.day{
+    margin-bottom: 0;
+}
+
 /* Mobile fixes */
 @media only screen and (max-width: 343px) {
     .logoFooter::before {
@@ -73,7 +82,7 @@
 
 /* Tablets/laptops */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    .logoFooter::before {
+    .footer .logoFooter::before {
         right: 0em;
     }
 }
