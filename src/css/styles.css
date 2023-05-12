@@ -5,6 +5,7 @@
 	--secondary-color: #9ce2f6;
 	--secondary-color-rgb: 156, 226, 246;
 	--text-color: #404040;
+	--text-color-rgb: 64, 64, 64;
 	--white: #fffffd;
 	--white-rgb: 255, 255, 253;
 	--grey: #797979;
@@ -103,6 +104,11 @@ main {
 
 .ico-taskrabbit-color:before {
 	background-image: url(../img/svg/ico-taskrabbit-color.svg);
+	background-color: transparent;
+}
+
+.ico-wallapop-color:before {
+	background-image: url(../img/svg/ico-wallapop-color.svg);
 	background-color: transparent;
 }
 
