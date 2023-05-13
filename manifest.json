@@ -1,6 +1,7 @@
 {
 	"name": "Instalaciones y Reformas",
 	"short_name": "Garox",
+	"description": "Instalaciones y Reformas",
 	"id": "/index.html",
 	"start_url": "/index.html",
 	"background_color": "#fffffd",
