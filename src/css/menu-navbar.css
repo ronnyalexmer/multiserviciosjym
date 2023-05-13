@@ -136,8 +136,6 @@
 	padding-left: 15px;
 	font-weight: bolder;
 	text-align: center;
-	height: 100%;
-    padding-top: 1.4em;
 }
 
 /* Desktop */
@@ -193,6 +191,11 @@
 		list-style-type: none;
 		display: flex;
 		align-self: auto;
+	}
+
+	.header .nav-pages .navigation-bar .pages li a {
+		height: 100%;
+		padding-top: 1.4em;
 	}
 
 	.header .nav-pages .navigation-bar .mobile-menu {
