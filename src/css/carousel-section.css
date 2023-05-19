@@ -8,6 +8,7 @@
 
 .carousel-section .carousel-item img {
 	height: 300px;
+	width: 100%;
 }
 
 .carousel-section .carousel-caption {
@@ -30,9 +31,8 @@
 	padding-right: 1em;
 }
 
-
-/* Desktop */
-@media only screen and (min-width: 1025px) {
+/* Tablets/laptops */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 	.carousel-section .carousel-caption {
 		position: absolute;
 	}
@@ -40,6 +40,16 @@
 	.carousel-section .carousel-item img {
 		height: unset;
 		max-height: 600px;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+
+
+	.carousel-section .carousel-item img {
+		height: unset;
+		max-height: 700px;
 	}
 
 }
