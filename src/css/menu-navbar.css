@@ -139,7 +139,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1160px) {
 	.header .nav-pages .navigation-container {
 		display: flex;
 	}

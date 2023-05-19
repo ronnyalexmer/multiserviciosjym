@@ -15,14 +15,14 @@
 	width: 100%;
 	left: 0;
 	position: unset;
+	margin-bottom: 1em;
 }
 
-.carousel-section .carousel-caption h2,
+.carousel-section .carousel-caption h2 a,
 .carousel-section .carousel-caption p {
 	color: var(--text-color);
 	position: relative;
 	z-index: 1;
-	/*text-shadow: 0.5px 0.5px var(--white-color);*/
 }
 
 .carousel-section .carousel-caption p {
