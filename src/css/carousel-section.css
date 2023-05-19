@@ -14,7 +14,6 @@
 .carousel-section .carousel-caption {
 	background: rgba(var(--secondary-color-rgb), 0.6);
 	width: 100%;
-	left: 0;
 	position: unset;
 	margin-bottom: 1em;
 }
@@ -35,6 +34,7 @@
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 	.carousel-section .carousel-caption {
 		position: absolute;
+		left: 0;
 	}
 
 	.carousel-section .carousel-item img {
@@ -46,6 +46,10 @@
 /* Desktop */
 @media only screen and (min-width: 1025px) {
 
+	.carousel-section .carousel-caption {
+		position: absolute;
+		left: 0;
+	}
 
 	.carousel-section .carousel-item img {
 		height: unset;

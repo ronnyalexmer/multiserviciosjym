@@ -62,15 +62,15 @@
 	left: 0.5em;
 }
 
-.check-list span.ico-bath::before {
-	background-color: var(--bath-color);
+.check-list span.ico-chair::before {
+	background-color: var(--wood-color);
 	top: 1em;
 	left: 0.3em;
 }
 
-.check-list span.ico-kitchen::before {
-	background-color: var(--kitchen-color);
-	top: 1em;
+.check-list span.ico-paint::before {
+	background-color: var(--paint-color);
+	top: 1.5em;
 	left: 0.2em;
 }
 

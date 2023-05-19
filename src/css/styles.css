@@ -17,6 +17,8 @@
 	--water-color: #0b6bea;
 	--temperature-color: #DB4437;
 	--bath-color: #9e9e9e;
+	--wood-color: #966F33;
+	--paint-color: #ec0fa2;
 	--kitchen-color: #ec0fa2;
 	--building-color: #000000;
 }
@@ -182,6 +184,20 @@ main {
 	mask-image: url(../img/svg/ico-building.svg);
 }
 
+.ico-chair::before {
+	-o-mask-image: url(../img/svg/ico-chair.svg);
+	-moz-mask-image: url(../img/svg/ico-chair.svg);
+	-webkit-mask-image: url(../img/svg/ico-chair.svg);
+	mask-image: url(../img/svg/ico-chair.svg);
+}
+
+.ico-paint::before {
+	-o-mask-image: url(../img/svg/ico-paint.svg);
+	-moz-mask-image: url(../img/svg/ico-paint.svg);
+	-webkit-mask-image: url(../img/svg/ico-paint.svg);
+	mask-image: url(../img/svg/ico-paint.svg);
+}
+
 .link-effect {
 	color: inherit;
 	text-decoration: none;
@@ -200,4 +216,5 @@ main {
 
 .link-effect:hover {
 	background-size: 0 3px, 100% 3px;
+	text-decoration: none;
 }
