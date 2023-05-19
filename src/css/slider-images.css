@@ -4,6 +4,10 @@
 	margin-bottom: 2em;
 }
 
+.slider-images-section .title {
+	margin-bottom: 1em;
+}
+
 @media (max-width: 768px) {
 	.slider-images-section .carousel-inner .carousel-item>div {
 		display: none;
