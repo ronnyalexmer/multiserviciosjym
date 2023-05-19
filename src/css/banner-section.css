@@ -1,0 +1,8 @@
+.banner-section {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.banner-section img{
+    width: 100%;
+}

@@ -24,13 +24,14 @@
 	<link rel="stylesheet" href="/src/css/menu-navbar.css">
 	<link rel="stylesheet" href="/src/css/banner-section.css">
 	<link rel="stylesheet" href="/src/css/paragraph-text.css">
-	<link rel="stylesheet" href="/src/css/included-services.css">
+	<link rel="stylesheet" href="/src/css/slider-images.css">
 	<link rel="stylesheet" href="/src/css/services-section.css">
 	<link rel="stylesheet" href="/src/css/footer.css">
 
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
 	<script src="/src/js/lib/jquery.slim.min.js"></script>
 	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
+	<script src="/src/js/slider-images.js"></script>
 </head>
 
 <body>
@@ -114,13 +115,11 @@
 	<main>
 		<section class="banner-section">
 			<div class="banner-container">
-				<img src="/src/img/fotos/reformas/reformas-banner.jpg" class="d-block w-100" alt="Reforma de baño">
-				<div class="carousel-caption">
-					<h2>Baños</h2>
-					<p>Reforma de lavabos integrales, Instalaciones de bañeras, duchas, Inodoros, etc.</p>
-				</div>
+				<picture>
+					<source media="(min-width:465px)" srcset="/src/img/fotos/reformas/reformas-banner-desktop.jpg">
+					<img src="/src/img/fotos/reformas/reformas-banner.jpg" alt="Reformas integrales y parciales">
+				</picture>
 			</div>
-
 			</div>
 		</section>
 
@@ -131,46 +130,110 @@
 
 			<div class="container container-description">
 				<p>
-					¡Transforma tu hogar con nuestro servicio de <strong>reformas</strong>! Ya sea que desees renovar tu
-					cocina,
-					modernizar tu baño o darle un nuevo aspecto a tu sala de estar, estamos aquí para hacer realidad tus
-					sueños. Nuestro equipo de expertos en reformas del hogar cuenta con años de experiencia y se
+					¡Transforma tu hogar con nuestro servicio de <strong>reformas</strong>! Ya sea renovar tu
+					cocina, modernizar tu baño, cambiar de bañera por plato de ducha, cambio de distribución
+					o darle un nuevo aspecto a tu sala de estar, estamos aquí para hacer realidad tus planes.</p>
+				<p>
+					Nuestro equipo de expertos en reformas del hogar cuenta con años de experiencia y se
 					compromete a brindarte resultados excepcionales. Desde el diseño hasta la instalación, nos
 					encargamos de cada detalle para que puedas disfrutar de un espacio renovado y funcional. No pierdas
-					la oportunidad de convertir tu hogar en el lugar que siempre has deseado. ¡Contáctanos hoy mismo
-					para obtener una consulta gratuita y comenzar tu proyecto de reforma!
+					la oportunidad de convertir tu hogar en el lugar que siempre has deseado.</p>
+				<p>
+					¡Contáctanos hoy mismo
+					para obtener una <a class="ico ico-tlf" href='tel:+34664823177'><span class="tlf-text">consulta
+							gratuita</span></a> y comenzar tu proyecto de reforma!
 				</p>
 			</div>
 		</section>
 
-		<section class="included-services">
-			<div class="container container-services">
+		<section class="slider-images-section">
+			<div class="container container-slider-images">
+				<h2 class="title">Nuestra Experiencia</h2>
 				<div class="row">
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="budget">
-							<span class="ico ico-budget"></span>
-							<h3 class="title">Presupuesto sin compromiso</h3>
-							<p class="text-services">
-								Cuéntanos tu idea y recibirás información gratis y sin compromiso
-								sobre el servicio que necesitas</p>
+					<div id="carouselReformasImages" class="carousel slide w-100" data-ride="carousel"
+						data-imgsSlider="3">
+						<div class="carousel-inner w-100" role="listbox">
+							<div class="carousel-item active">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano-1.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano-2.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano-3.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid"
+											src="/src/img/fotos/reformas/reformas-slider-cocina-1.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid"
+											src="/src/img/fotos/reformas/reformas-slider-cocina-2.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid"
+											src="/src/img/fotos/reformas/reformas-slider-cocina-3.jpg">
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano2-1.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano2-2.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="">
+										<img class="img-fluid" src="/src/img/fotos/reformas/reformas-slider-bano2-3.jpg">
+									</div>
+								</div>
+							</div>
+							
 						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="transport">
-							<span class="ico ico-transport"></span>
-							<h3 class="title">Desplazamiento</h3>
-							<p class="text-services">Nos desplazaremos hasta el problema para darte la mejor solución.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-4">
-						<div class="booked">
-							<span class="ico ico-booked"></span>
-							<h3 class="title">Reserva tu cita</h3>
-							<p class="text-services">Pon fecha y hora para solucionar aquel problema que requiera un
-								manitas.
-							</p>
-						</div>
+						<a class="carousel-control-prev w-auto" href="#carouselReformasImages" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+								aria-hidden="true"></span>
+							<span class="sr-only">Anterior Imágen</span>
+						</a>
+						<a class="carousel-control-next w-auto" href="#carouselReformasImages" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+								aria-hidden="true"></span>
+							<span class="sr-only">Siguiente Imágen</span>
+						</a>
 					</div>
 				</div>
 			</div>
