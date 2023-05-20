@@ -4,7 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#fffffd">
-	<title>Instalaciones y Reformas - Garox</title>
+	<title>Fontanería - Garox</title>
 	<meta name="description"
 		content="Instalaciones, reparaciones, montajes. Servicios de electricidad, fontanería, calefacción, colocación de parqué, pladur, pintura, alisados, albañilería, instalación de puertas, reformas de baños, reformas de cocinas, falsos techos y luminarias.">
 
@@ -22,15 +22,16 @@
 	<link rel="stylesheet" href="/src/css/styles.css">
 	<link rel="stylesheet" href="/src/css/social-navbar.css">
 	<link rel="stylesheet" href="/src/css/menu-navbar.css">
-	<link rel="stylesheet" href="/src/css/contact-form.css">
+	<link rel="stylesheet" href="/src/css/banner-section.css">
 	<link rel="stylesheet" href="/src/css/paragraph-text.css">
-	<link rel="stylesheet" href="/src/css/included-services.css">
+	<link rel="stylesheet" href="/src/css/slider-images.css">
 	<link rel="stylesheet" href="/src/css/services-section.css">
 	<link rel="stylesheet" href="/src/css/footer.css">
 
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
 	<script src="/src/js/lib/jquery.slim.min.js"></script>
 	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
+	<script src="/src/js/slider-images.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,8 @@
 					<h1 class="logo-title">
 						<a href="/" title="Garox" tabindex="0">
 							<span class="sr-only">Instalaciones y Reformas - Garox</span>
-							<img src="/src/img/logo.jpg" width="128" height="79" alt="logotip" class="img-logo" tabindex="-1">
+							<img src="/src/img/logo.jpg" width="128" height="79" alt="logotip" class="img-logo"
+								tabindex="-1">
 						</a>
 					</h1>
 					<div class="mobile-menu">
@@ -76,7 +78,7 @@
 
 					<div class="collapse navbar-collapse" id="navbarMenu">
 						<ul class="pages">
-							<li class="active">
+							<li>
 								<a href="/">Inicio</a>
 							</li>
 							<li>
@@ -88,7 +90,7 @@
 							<li>
 								<a href="/electricidad/">Electricidad</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="/fontaneria/">Fontaneria</a>
 							</li>
 							<li>
@@ -111,7 +113,160 @@
 	</header>
 
 	<main>
-		<!-- Section code here -->
+		<section class="banner-section">
+			<div class="banner-container">
+				<picture>
+					<source media="(min-width:465px)"
+						srcset="/src/img/fotos/fontaneria/fontaneria-banner-desktop.jpg">
+					<img src="/src/img/fotos/fontaneria/fontaneria-banner.webp" alt="Instalaciones Eléctricas">
+				</picture>
+			</div>
+			</div>
+		</section>
+
+		<section class="paragraph-text">
+			<div class="title">
+				<h2>Instalaciones Eléctricas</h2>
+			</div>
+
+			<div class="container container-description">
+				<p>
+					Instalaciones de datos, TV, acometidas, automatismo, iluminación, video portero, reparación
+					de averías, mantenimiento.
+				</p>
+				<p>Instalación de encimeras, hornos, campanas.</p>
+			</div>
+		</section>
+
+		<section class="slider-images-section">
+			<div class="container container-slider-images">
+				<h2 class="title">Nuestra Experiencia</h2>
+				<div class="row">
+					<div id="carouselReformasImages" class="carousel slide w-100" data-ride="carousel"
+						data-imgsSlider="3">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Conexiones Eléctricas" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-1-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-1.jpg">
+										<h3>Conexiones Eléctricas</h3>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Conexiones Eléctricas" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-2-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-2.jpg">
+										<h3>Conexiones Eléctrica</h3>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Conexiones Eléctricas" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-3-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-conexiones-3.jpg">
+										<h3>Conexiones Eléctrica</h3>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Iluminación en techos" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-1-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-1.jpg">
+										<h3>Iluminación en techos</h3>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Iluminación en techos" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-2-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-2.jpg">
+										<h3>Iluminación en techos</h3>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Iluminación en techos" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-3-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-3.jpg">
+										<h3>Iluminación en techos</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Iluminación en techos" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-4-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-iluminacion-4.jpg">
+										<h3>Iluminación en techos</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Interruptores inteligentes" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-interruptor-1-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-interruptor-1.jpg">
+										<h3>Interruptores inteligentes</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Video Portero" class="img-fluid"
+											data-modal-img="/src/img/fotos/fontaneria/fontaneria-slider-videoportero-1-modal.jpg"
+											src="/src/img/fotos/fontaneria/fontaneria-slider-videoportero-1.jpg">
+										<h3>Video Portero</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselReformasImages" role="button" data-slide="prev">
+							<span class="ico ico-left" aria-hidden="true"></span>
+							<span class="sr-only">Anterior Imágen</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselReformasImages" role="button" data-slide="next">
+							<span class="ico ico-right" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente Imágen</span>
+						</a>
+						<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Fotos tamaño real"
+							aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Visualizador de fotos</h4>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Cerrar visualizador de fotos">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 	<footer class="footer border-top">
 		<div class="pre-footer">
