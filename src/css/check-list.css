@@ -7,7 +7,7 @@
 	margin-bottom: 3em;
 	text-align: center;
 	padding-left: 2em;
-    padding-right: 2em;
+	padding-right: 2em;
 }
 
 .check-list ol {
@@ -16,11 +16,11 @@
 
 .check-list li {
 	padding-left: 35%;
-    text-align: left;
+	text-align: left;
 	margin-top: 0.5em;
 }
 
-.check-list h3{
+.check-list li h4 {
 	font-size: 16px;
 	display: inline;
 }
