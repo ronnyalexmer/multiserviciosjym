@@ -9,7 +9,11 @@
 }
 
 .slider-images-section .carousel {
-	min-height: 15em;
+	min-height: 16em;
+}
+
+.slider-images-section .carousel .modal img {
+	width: 100%;
 }
 
 .slider-images-section .carousel-description img,

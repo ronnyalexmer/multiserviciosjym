@@ -6,6 +6,7 @@ var carouselImage = {
 	events: function ($carousel) {
 		this.setInterval($carousel);
 		this.setupImgsSlider($carousel);
+		this.setupModal($carousel);
 	},
 
 	setInterval: function ($carousel) {
@@ -33,7 +34,30 @@ var carouselImage = {
 				next.children(':first-child').clone().appendTo($(this));
 			}
 		});
+	},
+
+	setupModal: function ($carousel) {
+		var $modal = $carousel.find(".modal");
+		$carousel.find(".carousel-description").each(function () {
+			carouselImage.openModalImg($(this), $modal);
+		});
+	},
+
+	openModalImg: function ($item, $modal) {
+		$item.click(function () {
+			var $this = $(this);
+			var title = $this.find("h3").text();
+			var $imgThumbail = $this.find("img");
+			var imgUrl = $imgThumbail.attr("data-modal-img");
+			var altText = $imgThumbail.attr("alt");
+			var $img = "<img src='" + imgUrl + "' alt='" + altText + "'>";
+			$modal.find(".modal-title").text(title);
+			$modal.find(".modal-body").html($img);
+			$modal.modal("show");
+		});
 	}
+
+
 }
 
 $(document).ready(function () {
