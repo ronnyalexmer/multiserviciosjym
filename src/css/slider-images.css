@@ -76,9 +76,13 @@
 	.slider-images-section .carousel-inner .carousel-item-prev {
 		transform: translateX(-33.333%);
 	}
+
+
 }
 
 .slider-images-section .carousel-inner .carousel-item-right,
 .slider-images-section .carousel-inner .carousel-item-left {
 	transform: translateX(0);
 }
+
+
