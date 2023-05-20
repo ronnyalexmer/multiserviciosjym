@@ -13,7 +13,7 @@
     background-image: url("../img/fotos/inicio/contact-form.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -67,6 +67,11 @@
 
 .contact-form .container-contact-social-icons {
     margin-top: 1em;
+}
+
+
+.contact-form .container-contact-social-icons p{
+    text-align: center;
 }
 
 .contact-form .contact-social-icons {
