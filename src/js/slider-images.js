@@ -50,9 +50,15 @@ var carouselImage = {
 			var $imgThumbail = $this.find("img");
 			var imgUrl = $imgThumbail.attr("data-modal-img");
 			var altText = $imgThumbail.attr("alt");
-			var $img = "<img src='" + imgUrl + "' alt='" + altText + "'>";
+			var noExtensionUrl = imgUrl.replace(/\.[^/.]+$/, "");
+			var $picture = "<picture>" +
+				"<source srcset='" + noExtensionUrl + ".webp' type='image/webp'>" +
+				"<source srcset='" + imgUrl + "' type='image/jpeg'>" +
+				"<img src='" + imgUrl + "' alt='" + altText + "'>";
+			"</picture>";
+
 			$modal.find(".modal-title").text(title);
-			$modal.find(".modal-body").html($img);
+			$modal.find(".modal-body").html($picture);
 			$modal.modal("show");
 		});
 	}
