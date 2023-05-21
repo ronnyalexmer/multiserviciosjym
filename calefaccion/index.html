@@ -4,12 +4,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#fffffd">
-	<title>Instalaciones y Reformas - Garox</title>
+	<title>Calefacción - Garox</title>
 	<meta name="description"
 		content="Instalaciones, reparaciones, montajes. Servicios de electricidad, fontanería, calefacción, colocación de parqué, pladur, pintura, alisados, albañilería, instalación de puertas, reformas de baños, reformas de cocinas, falsos techos y luminarias.">
 
 	<meta property="og:site_name" content="Instalaciones y Reformas - Garox">
-	<meta property="og:title" content="Instalaciones y Reformas - Garox" />
+	<meta property="og:title" content="Calefacción - Garox" />
 	<meta property="og:description"
 		content="Instalaciones, reparaciones, montajes. Servicios de electricidad, fontanería, calefacción, colocación de parqué, pladur, pintura, alisados, albañilería, instalación de puertas, reformas de baños, reformas de cocinas, falsos techos y luminarias." />
 	<meta property="og:image" itemprop="image" content="https://ronnyalexmer.github.io/src/img/favicon/garox.jpg">
@@ -22,15 +22,16 @@
 	<link rel="stylesheet" href="/src/css/styles.css">
 	<link rel="stylesheet" href="/src/css/social-navbar.css">
 	<link rel="stylesheet" href="/src/css/menu-navbar.css">
-	<link rel="stylesheet" href="/src/css/contact-form.css">
+	<link rel="stylesheet" href="/src/css/banner-section.css">
 	<link rel="stylesheet" href="/src/css/paragraph-text.css">
-	<link rel="stylesheet" href="/src/css/included-services.css">
+	<link rel="stylesheet" href="/src/css/slider-images.css">
 	<link rel="stylesheet" href="/src/css/services-section.css">
 	<link rel="stylesheet" href="/src/css/footer.css">
 
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
 	<script src="/src/js/lib/jquery.slim.min.js"></script>
 	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
+	<script src="/src/js/slider-images.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,8 @@
 					<h1 class="logo-title">
 						<a href="/" title="Garox" tabindex="0">
 							<span class="sr-only">Instalaciones y Reformas - Garox</span>
-							<img src="/src/img/logo.jpg" width="128" height="79" alt="logotip" class="img-logo" tabindex="-1">
+							<img src="/src/img/logo.jpg" width="128" height="79" alt="logotip" class="img-logo"
+								tabindex="-1">
 						</a>
 					</h1>
 					<div class="mobile-menu">
@@ -76,7 +78,7 @@
 
 					<div class="collapse navbar-collapse" id="navbarMenu">
 						<ul class="pages">
-							<li class="active">
+							<li>
 								<a href="/">Inicio</a>
 							</li>
 							<li>
@@ -100,7 +102,7 @@
 							<li>
 								<a href="/carpinteria/">Carpintería</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="/calefaccion/">Calefacción</a>
 							</li>
 						</ul>
@@ -111,7 +113,134 @@
 	</header>
 
 	<main>
-		<!-- Section code here -->
+		<section class="banner-section">
+			<div class="banner-container">
+				<picture>
+					<source media="(min-width:465px)"
+						srcset="/src/img/fotos/calefaccion/calefaccion-banner-desktop.jpg">
+					<img src="/src/img/fotos/calefaccion/calefaccion-banner.jpg" alt="Calefacción">
+				</picture>
+			</div>
+			</div>
+		</section>
+
+		<section class="paragraph-text">
+			<div class="title">
+				<h2>Calefacción</h2>
+			</div>
+
+			<div class="container container-description">
+				<p>
+					Instalación de calderas, calentadores, radiadores, emisores térmicos.
+					Reparaciones, mantenimiento de circuitos.
+				</p>
+			</div>
+		</section>
+
+		<section class="slider-images-section">
+			<div class="container container-slider-images">
+				<h2 class="title">Nuestra Experiencia</h2>
+				<div class="row">
+					<div id="carouselFontaneriaImages" class="carousel slide w-100" data-ride="carousel"
+						data-imgsSlider="3">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Instalación de radiadores" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-radiador-1-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-radiador-1.jpg">
+										<h3>Instalación de radiadores</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Instalación de radiadores" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-radiador-2-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-radiador-2.jpg">
+										<h3>Instalación de radiadores</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Reparación de radiadores" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-radiador-3-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-radiador-3.jpg">
+										<h3>Reparación de radiadores</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Instalación de emisor térmico" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-toallero-1-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-toallero-1.jpg">
+										<h3>Instalación de emisor térmico</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Instalación de emisor térmico" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-toallero-2-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-toallero-2.jpg">
+										<h3>Instalación de emisor térmico</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="col-md-4">
+									<div class="carousel-description">
+										<img alt="Foto de Instalación de emisor térmico" class="img-fluid"
+											data-modal-img="/src/img/fotos/calefaccion/calefaccion-slider-toallero-3-modal.jpg"
+											src="/src/img/fotos/calefaccion/calefaccion-slider-toallero-3.jpg">
+										<h3>Instalación de emisor térmico</h3>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<a class="carousel-control-prev" href="#carouselFontaneriaImages" role="button"
+							data-slide="prev">
+							<span class="ico ico-left" aria-hidden="true"></span>
+							<span class="sr-only">Anterior Imágen</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselFontaneriaImages" role="button"
+							data-slide="next">
+							<span class="ico ico-right" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente Imágen</span>
+						</a>
+						<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Fotos tamaño real"
+							aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Visualizador de fotos</h4>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Cerrar visualizador de fotos">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 	<footer class="footer border-top">
 		<div class="pre-footer">
@@ -135,7 +264,7 @@
 							<li><a class="text-footer" href="/fontaneria/">Fontaneria</a></li>
 							<li><a class="text-footer" href="/pintura/">Pintura</a></li>
 							<li><a class="text-footer" href="/construccion/">Construcción</a></li>
-							<li><a class="text-footer" href="/carpinteria/">Carpintería</a></li>
+							<li><a class="text-footer" href="/carpinteria/">Calefacción</a></li>
 							<li><a class="text-footer" href="/calefaccion/">Calefacción</a></li>
 						</ul>
 					</div>
