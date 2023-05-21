@@ -49,7 +49,9 @@ main {
 @media only screen and (min-width: 1025px) {}
 
 
-
+.pijama {
+	background-color: var(--pijama);
+}
 
 .ico::before {
 	content: "";
