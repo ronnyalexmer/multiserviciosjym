@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="/src/css/lib/bootstrap.min.css">
 	<script src="/src/js/lib/jquery.slim.min.js"></script>
 	<script src="/src/js/lib/bootstrap.bundle.min.js"></script>
+	<script src="/src/js/contact-form.js"></script>
 </head>
 
 <body>
@@ -52,8 +53,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="ico ico-tlf" href='tel:+34664823177'><span
-									class="tlf-text">Llámame</span></a>
+							<a class="ico ico-tlf" href='tel:+34664823177'><span class="tlf-text">Llámame</span></a>
 						</li>
 					</ul>
 				</div>
@@ -126,21 +126,30 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-body px-4">
-								<form class="mx-md-5" action="">
+								<form class="mx-md-5" action="post">
 									<div class="form-field">
-										<input type="text" class="form-control" placeholder="Nombre">
+										<input minlength="2" maxlength="20" name="clientName" type="text"
+											class="form-control" placeholder="Nombre">
+										<span class="text-danger">Ingrese su nombre para dirigirme a ud.</span>
 									</div>
 									<div class="form-field">
 										<label for="phone" class="sr-only">Teléfono</label>
-										<input type="number" class="form-control" id="phone"
+										<input minlength="5" maxlength="20" name="clientPhone" type="number"
+											class="form-control" id="phone"
 											placeholder="Teléfono (Sin espacios, y sin +34)">
+										<span class="text-danger">Ingrese su número de teléfono o email.</span>
+									</div>
+									<div class="or">o</div>
+									<div class="form-field">
+										<input minlength="5" maxlength="254" name="clientEmail" type="email"
+											class="form-control" placeholder="Correo electrónico">
+										<span class="text-danger">Ingrese su número de teléfono o email.</span>
 									</div>
 									<div class="form-field">
-										<input type="text" class="form-control" placeholder="Correo electrónico">
-									</div>
-									<div class="form-field">
-										<textarea class="md-textarea form-control" rows="3"
+										<textarea minlength="5" maxlength="2000"
+											class="md-textarea form-control clientMsg" rows="3"
 											placeholder="&iquest;Qué necesitas?"></textarea>
+										<span class="text-danger">Ingrese una explicación válida</span>
 									</div>
 
 									<button type="button" class="btn contact-button font-weight-bold">Enviar</button>
@@ -169,6 +178,29 @@
 											<p class="hours">09:00 - 20:00</p>
 											<p class="day">Sábado</p>
 											<p class="hours">09:00 - 14:00</p>
+										</div>
+									</div>
+									<div class="modal fade" tabindex="-1" role="dialog"
+										aria-labelledby="Área de respuesta del formulario" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Cerrar el área de respuesta del formulario">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p class="success">Petición enviada correctamente</p>
+													<p class="error">Su petición no se ha enviado, pruebe a
+														contactar desde el correo
+														<a class="link-effect"
+															href="mailto:info@garoxinstalacionesyreformas.com?Subject=Presupuesto sin compromiso">info@garoxinstalacionesyreformas.com</a>
+													</p>
+													<p class="miss">Algo ha ido mal, revise el formulario de contacto.
+													</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</form>
@@ -384,8 +416,7 @@
 										<source srcset="/src/img/fotos/inicio/section-construccion.jpg"
 											type="image/jpeg">
 										<img width="160" height="160"
-											src="/src/img/fotos/inicio/section-construccion.jpg"
-											alt="Construcción">
+											src="/src/img/fotos/inicio/section-construccion.jpg" alt="Construcción">
 									</picture>
 								</figure>
 							</a>
@@ -403,8 +434,7 @@
 										<source srcset="/src/img/fotos/inicio/section-carpinteria.jpg"
 											type="image/jpeg">
 										<img width="160" height="160"
-											src="/src/img/fotos/inicio/section-carpinteria.jpg"
-											alt="Carpintería">
+											src="/src/img/fotos/inicio/section-carpinteria.jpg" alt="Carpintería">
 									</picture>
 								</figure>
 							</a>
@@ -422,8 +452,7 @@
 										<source srcset="/src/img/fotos/inicio/section-calefaccion.jpg"
 											type="image/jpeg">
 										<img width="160" height="160"
-											src="/src/img/fotos/inicio/section-calefaccion.jpg"
-											alt="Calefacción">
+											src="/src/img/fotos/inicio/section-calefaccion.jpg" alt="Calefacción">
 									</picture>
 								</figure>
 							</a>

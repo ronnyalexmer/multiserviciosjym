@@ -48,6 +48,36 @@ main {
 /* Desktop */
 @media only screen and (min-width: 1025px) {}
 
+.text-danger {
+	display: none;
+}
+.or {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	height: 20px;
+	line-height: 10px;
+	text-align: center;
+}
+
+.or::before,
+.or::after {
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	top: 5px;
+	background-color: var(--grey);
+}
+
+.or::before {
+	left: 0;
+}
+
+.or::after {
+	right: 0;
+}
+
 
 .pijama {
 	background-color: var(--pijama);

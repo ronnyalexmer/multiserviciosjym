@@ -1,4 +1,4 @@
-var carouselImage = {
+var sliderImage = {
 	init: function ($carousel) {
 		this.events($carousel);
 	},
@@ -39,7 +39,7 @@ var carouselImage = {
 	setupModal: function ($carousel) {
 		var $modal = $carousel.find(".modal");
 		$carousel.find(".carousel-description").each(function () {
-			carouselImage.openModalImg($(this), $modal);
+			sliderImage.openModalImg($(this), $modal);
 		});
 	},
 
@@ -68,6 +68,6 @@ var carouselImage = {
 
 $(document).ready(function () {
 	$(".slider-images-section .carousel").each(function () {
-		carouselImage.init($(this));
+		sliderImage.init($(this));
 	});
 });
