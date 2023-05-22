@@ -1,15 +1,15 @@
 <?php
 $error = false;
 
-if (empty($_POST['clientName'])) {
+if (empty($_REQUEST['clientName'])) {
 	$error = true;
 }
 
-if (empty($_POST['clientPhone']) && empty($_POST['clientEmail'])) {
+if (empty($_REQUEST['clientPhone']) && empty($_REQUEST['clientEmail'])) {
 	$error = true;
 }
 
-if (empty($_POST['clientMsg'])) {
+if (empty($_REQUEST['clientMsg'])) {
 	$error = true;
 }
 
@@ -17,12 +17,12 @@ if ($error) {
 	echo 'MISS';
 } else {
 
-	$name = strip_tags($_POST['clientName']);
-	$phone = strip_tags($_POST['clientPhone']);
-	$email = strip_tags($_POST['clientEmail']);
-	$message = strip_tags($_POST['clientMsg']);
+	$name =  utf8_decode(strip_tags($_REQUEST['clientName']));
+	$phone = utf8_decode(strip_tags($_REQUEST['clientPhone']));
+	$email = utf8_decode(strip_tags($_REQUEST['clientEmail']));
+	$message = utf8_decode(strip_tags($_REQUEST['clientMsg']));
 
-	$fullmessage = "Nombre: " . $name . "\nCorreo: " . $email . "\nTlf: " . $phone . "\nMensaje: " . $message;
+	$fullmessage = "Nombre: " . $name . "\nCorreo: " . $email . "\nTlf: " . $phone . "\nMensaje:\n" . $message;
 
 	$to = 'info@garoxinstalacionesyreformas.com';
 	$subject = $name .' te ha escrito desde la web garoxinstalacionesyreformas.com';
