@@ -57,6 +57,7 @@ var contactForm = {
 		var $button = $form.find(".contact-button");
 
 		$button.click(function () {
+			var sendForm = true;
 			var $clientName = $form.find("input[name='clientName']");
 			var $clientPhone = $form.find("input[name='clientPhone']");
 			var $clientEmail = $form.find("input[name='clientEmail']");
@@ -71,6 +72,7 @@ var contactForm = {
 			if (validName) {
 				$clientName.siblings(".text-danger").hide();
 			} else {
+				sendForm = false;
 				$clientName.siblings(".text-danger").show();
 			}
 
@@ -80,13 +82,18 @@ var contactForm = {
 			} else {
 				$clientPhone.siblings(".text-danger").show();
 				$clientEmail.siblings(".text-danger").show();
+				sendForm = false;
 			}
 
 			if (validMsg) {
 				$clientMsg.siblings(".text-danger").hide();
-				$form.submit();
 			} else {
 				$clientMsg.siblings(".text-danger").show();
+				sendForm = false;
+			}
+
+			if (sendForm) {
+				$form.submit();
 			}
 		});
 	},
