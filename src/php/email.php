@@ -24,8 +24,8 @@ if ($error) {
 
 	$fullmessage = "Nombre: " . $name . "\nCorreo: " . $email . "\nTlf: " . $phone . "\nMensaje:\n" . $message;
 
-	$to = 'info@garoxinstalacionesyreformas.com';
-	$subject = $name .' te ha escrito desde la web garoxinstalacionesyreformas.com';
+	$to = 'info@multiserviciosjym.com';
+	$subject = $name .' te ha escrito desde la web multiserviciosjym.com';
 	$send_email = mail($to, $subject, $fullmessage, $email);
 
 

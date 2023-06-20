@@ -1,7 +1,7 @@
 {
-	"name": "Instalaciones y Reformas",
-	"short_name": "Garox",
-	"description": "Instalaciones y Reformas",
+	"name": "MultiServicios",
+	"short_name": "J&M",
+	"description": "MultiServicios",
 	"id": "/index.html",
 	"start_url": "/index.html",
 	"background_color": "#fffffd",
