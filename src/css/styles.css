@@ -1,9 +1,10 @@
 :root {
-	--primary-color: #ff671f;
-	--primary-color-rgb: 255, 103, 31;
+	--primary-color: #00adb5;
+	--primary-color-rgb: 0, 173, 181;
 	--primary-hover-color: #ffa074;
 	--secondary-color: #8C8C8C;
 	--secondary-color-rgb: 140, 140, 140;
+	--nav-color: #f1f1f1;
 	--text-color: #252525;
 	--text-color-rgb: 37, 37, 37;
 	--white-rgb: 255, 255, 253;
@@ -84,7 +85,7 @@ main {
 
 .ico::before {
 	content: "";
-	background-color: var(--grey);
+	background-color: var(--nav-color);
 	background-size: contain;
 	width: 20px;
 	height: 20px;

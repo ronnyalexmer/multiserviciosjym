@@ -26,7 +26,7 @@
 }
 
 .header .nav-pages .navigation-bar {
-	background-color: var(--secondary-color);
+	background-color: var(--nav-color);
 	height: 80px;
 	width: 100%;
 	display: flex;
