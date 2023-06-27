@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #00adb5;
 	--primary-color-rgb: 0, 173, 181;
-	--primary-hover-color: #00777e;
+	--primary-hover-color: #00ced9;
 	--secondary-color: #00a6f7;
 	--secondary-color-rgb: 0, 166, 247;
 	--nav-color: #f1f1f1;
@@ -143,6 +143,11 @@ main {
 
 .ico-wallapop-color:before {
 	background-image: url(../img/svg/ico-wallapop-color.svg);
+	background-color: transparent;
+}
+
+.ico-wallapop-black:before {
+	background-image: url(../img/svg/ico-wallapop-black.svg);
 	background-color: transparent;
 }
 
