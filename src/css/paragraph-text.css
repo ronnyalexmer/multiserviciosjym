@@ -17,3 +17,6 @@
     border-bottom: solid 1px var(--grey);
     padding-bottom: 3em;
 }
+.paragraph-text ul {
+    margin-left: 2em;
+}
