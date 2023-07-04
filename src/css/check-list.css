@@ -58,8 +58,8 @@
 
 .check-list span.ico-boxes::before {
 	background-color: var(--box-color);
-	top: 1.5em;
-	left: 0.5em;
+	top: 1.25em;
+	left: 0.25em;
 }
 
 .check-list span.ico-chair::before {
