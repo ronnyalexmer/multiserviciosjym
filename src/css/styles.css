@@ -21,6 +21,7 @@
 	--paint-color: #ec0fa2;
 	--kitchen-color: #ec0fa2;
 	--building-color: #000000;
+	--box-color: #d3ac6c;
 }
 
 * {
@@ -233,6 +234,13 @@ main {
 	-moz-mask-image: url(../img/svg/ico-paint.svg);
 	-webkit-mask-image: url(../img/svg/ico-paint.svg);
 	mask-image: url(../img/svg/ico-paint.svg);
+}
+
+.ico-boxes::before {
+	-o-mask-image: url(../img/svg/ico-boxes.svg);
+	-moz-mask-image: url(../img/svg/ico-boxes.svg);
+	-webkit-mask-image: url(../img/svg/ico-boxes.svg);
+	mask-image: url(../img/svg/ico-boxes.svg);
 }
 
 .ico-left::before {

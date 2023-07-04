@@ -56,8 +56,8 @@
 	left: 0.9em;
 }
 
-.check-list span.ico-temperature::before {
-	background-color: var(--temperature-color);
+.check-list span.ico-boxes::before {
+	background-color: var(--box-color);
 	top: 1.5em;
 	left: 0.5em;
 }
