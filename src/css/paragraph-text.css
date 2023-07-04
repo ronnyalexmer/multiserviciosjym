@@ -20,3 +20,7 @@
 .paragraph-text ul {
     margin-left: 2em;
 }
+
+.paragraph-text .ico-tlf:before {
+    background-color: var(--primary-color);
+}
