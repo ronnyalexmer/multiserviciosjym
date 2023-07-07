@@ -1,88 +1,90 @@
 /* Navigation Social */
 .header .nav-social {
-    background: var(--primary-color);
-    height: 55px;
-    width: 100%;
-    text-align: center;
-    height: auto;
+	background: var(--primary-color);
+	height: 55px;
+	width: 100%;
+	text-align: center;
+	height: auto;
 }
 
 .header .nav-social .socialtop {
-    margin: auto;
-    float: none;
+	margin: auto;
+	float: none;
 }
 
 .header .nav-social .socialtop .top-social a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bolder;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bolder;
 }
 
 .header .nav-social .socialtop .top-social a:first-child {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 
 .header .nav-social .socialtop .top-social {
-    display: flex;
+	display: flex;
 }
 
 .header .nav-social .socialtop .top-social a:hover {
-    /*color: var(--secondary-color);*/
+	/*color: var(--secondary-color);*/
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled {
-    display: flex;
-    margin: 0 auto 0 auto;
-    width: 100%;
+	display: flex;
+	margin: 0 auto 0 auto;
+	width: 100%;
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-whatsapp::before {
-    background-color: var(--whatsapp-color);
+	background-color: var(--whatsapp-color);
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-email::before {
-    background-color: var(--email-color);
+	background-color: var(--email-color);
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li:hover .ico-tlf::before {
-    background-color: var(--tlf-color);
+	background-color: var(--tlf-color);
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li:last-child {
-    background-color: var(--secondary-color);
+	background-color: var(--secondary-color);
 }
 
 .header .nav-social .socialtop .top-social .list-unstyled li:hover {
-    background-color: var(--secondary-color);
+	background-color: var(--secondary-color);
 }
 
 .header .nav-social .socialtop .top-social a .email-txt {
-    display: none;
+	display: none;
 }
 
 /* Mobile fixes */
 @media only screen and (max-width: 364px) {
-    .header .nav-social .socialtop .top-social {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .header .nav-social .socialtop .top-social .tlf-text {
-        display: none;
-    }
+	.header .nav-social .socialtop .top-social {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.header .nav-social .socialtop .top-social .tlf-text, 
+	.header .nav-social .socialtop .top-social .whatsapp-text, 
+	.header .nav-social .socialtop .top-social .email-txt {
+		display: none;
+	}
 }
 
 /* Tablets/laptops */
@@ -92,31 +94,31 @@
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {
-
-    .header .nav-social {
-        height: 3.5em;
-    }
-
-    .header .nav-social .socialtop {
-        float: right;
-    }
-
-    .header .nav-social .socialtop .top-social .list-unstyled {
-        height: 3.5em;
-    }
-
-    .header .nav-social .socialtop .top-social .list-unstyled li {
-        width: initial;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-
-    .header .nav-social .socialtop .top-social .list-unstyled li:last-child {
-        background-color: var(--secondary-color);
-        padding-right: 2em;
-    }
-
-
-
+	
+	.header .nav-social {
+		height: 3.5em;
+	}
+	
+	.header .nav-social .socialtop {
+		float: right;
+	}
+	
+	.header .nav-social .socialtop .top-social .list-unstyled {
+		height: 3.5em;
+	}
+	
+	.header .nav-social .socialtop .top-social .list-unstyled li {
+		width: initial;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
+	
+	.header .nav-social .socialtop .top-social .list-unstyled li:last-child {
+		background-color: var(--secondary-color);
+		padding-right: 2em;
+	}
+	
+	
+	
 }
