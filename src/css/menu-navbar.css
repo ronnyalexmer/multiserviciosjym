@@ -159,7 +159,7 @@
 	.header .nav-pages .navigation-bar .pages li.active,
 	.header .nav-pages .navigation-bar .pages li:hover {
 		background-color: var(--primary-color);
-		border-bottom: solid 5px var(--secondary-color);
+		border-bottom: solid 10px var(--secondary-color);
 		border-left: unset;
 	}
 
