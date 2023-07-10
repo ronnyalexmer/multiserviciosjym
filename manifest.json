@@ -4,7 +4,7 @@
 	"description": "MultiServicios",
 	"id": "/index.html",
 	"start_url": "/index.html",
-	"background_color": "#fffffd",
+	"background_color": "#f1f1f1",
 	"theme_color": "#f2f2f2",
 	"orientation": "portrait-primary",
 	"display": "minimal-ui",
