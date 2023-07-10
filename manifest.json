@@ -1,7 +1,7 @@
 {
-	"name": "MultiServicios",
-	"short_name": "J&M",
-	"description": "MultiServicios",
+	"name": "MultiServiciosJ&M",
+	"short_name": "MultiServicios J&M",
+	"description": "MultiServicios J&M",
 	"id": "/index.html",
 	"start_url": "/index.html",
 	"background_color": "#f1f1f1",
